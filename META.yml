@@ -1,0 +1,12 @@
+--- 
+abstract: Dist::Zilla with Changes check
+author: 
+  - Fayland Lam <fayland@gmail.com>
+generated_by: Dist::Zilla::Plugin::MetaYaml version 1.091260
+license: perl
+name: Dist-Zilla-Plugin-CheckChangeLog
+requires: 
+  Dist::Zilla: 1.007
+resources: 
+  repository: http://github.com/fayland/dist-zilla-plugin-checkchangelog/tree
+version: 0.01
