@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::CheckChangeLog;
-our $VERSION = '0.01';
+$Dist::Zilla::Plugin::CheckChangeLog::VERSION = '0.02';
 
 # ABSTRACT: Dist::Zilla with Changes check
 
@@ -25,7 +25,6 @@ sub setup_installer {
           Dist::Zilla::File::OnDisk->new( { name => $filename } );
     }
     else {
-
         # grep files to check if there is any Changes file
         my $files = $self->zilla->files->grep(
             sub {
@@ -89,19 +88,23 @@ no Moose;
 
 __END__
 
+=pod
+
+=encoding UTF-8
+
 =head1 NAME
 
 Dist::Zilla::Plugin::CheckChangeLog - Dist::Zilla with Changes check
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
     # dist.ini
     [CheckChangeLog]
-
+    
     # or
     [CheckChangeLog]
     filename = Changes.pod
@@ -112,11 +115,13 @@ The code is mostly a copy-paste of L<ShipIt::Step::CheckChangeLog>
 
 =head1 AUTHOR
 
-  Fayland Lam <fayland@gmail.com>
+Fayland Lam <fayland@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2009 by Fayland Lam.
+This software is copyright (c) 2014 by Fayland Lam.
 
 This is free software; you can redistribute it and/or modify it under
-the same terms as perl itself.
+the same terms as the Perl 5 programming language system itself.
+
+=cut

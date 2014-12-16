@@ -1,26 +1,13 @@
-NAME
-    Dist::Zilla::Plugin::CheckChangeLog - Dist::Zilla with Changes check
-
-VERSION
-    version 0.01
-
 SYNOPSIS
+
         # dist.ini
         [CheckChangeLog]
-
+        
         # or
         [CheckChangeLog]
         filename = Changes.pod
 
 DESCRIPTION
+
     The code is mostly a copy-paste of ShipIt::Step::CheckChangeLog
-
-AUTHOR
-      Fayland Lam <fayland@gmail.com>
-
-COPYRIGHT AND LICENSE
-    This software is copyright (c) 2009 by Fayland Lam.
-
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as perl itself.
 
